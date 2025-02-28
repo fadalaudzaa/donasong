@@ -1,0 +1,41 @@
+{
+  "name": "donasong",
+  "version": "1.0.0",
+  "description": "A modern web application for managing song requests with donation-based prioritization (shoutout to MARAPTHON) Built with React and TypeScript, featuring a neo-brutalist design system.",
+  "main": "eslint.config.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadalaudzaa/donasong.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/fadalaudzaa/donasong/issues"
+  },
+  "homepage": "https://github.com/fadalaudzaa/donasong#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "@tanstack/react-query": "^5.66.9",
+    "axios": "^1.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.5.2",
+    "react-router-dom": "^6.22.0",
+    "styled-components": "^6.1.15"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  }
+}
