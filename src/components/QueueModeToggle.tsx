@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useQueueMode } from '../lib/QueueModeContext';
-import { ToggleSwitch } from './ToggleSwitch';
-import { Checkbox } from './Checkbox';
+import { ToggleSwitch } from './common/ToggleSwitch';
+import { Checkbox } from './common/Checkbox';
 
 const ToggleContainer = styled.div`
   display: flex;
