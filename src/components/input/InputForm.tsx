@@ -23,6 +23,14 @@ const ButtonContainer = styled.div`
   justify-content: space-between;
   gap: 1rem;
   margin-top: 1.5rem;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}) {
+    flex-direction: column;
+    
+    > button {
+      width: 100%;
+    }
+  }
 `;
 
 interface InputFormProps {
@@ -139,6 +147,7 @@ export const InputForm: React.FC<InputFormProps> = ({ onNavigateToQueue }) => {
         <Button
           type="button"
           variant="primary"
+          size="large"
           onClick={onNavigateToQueue}
         >
           View Queue
@@ -146,6 +155,7 @@ export const InputForm: React.FC<InputFormProps> = ({ onNavigateToQueue }) => {
         <Button
           type="submit"
           variant="secondary"
+          size="large"
           disabled={addSongMutation.isPending}
         >
           {addSongMutation.isPending ? 'Adding...' : 'Add to Queue'}
